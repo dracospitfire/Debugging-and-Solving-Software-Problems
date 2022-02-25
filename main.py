@@ -48,7 +48,6 @@ def get_same_or_newer(start_date, data):
     min_date_employees = []
     for user, date in data.items():
         row_date = datetime.datetime.strptime(date, '%Y-%m-%d')
-
         # If this date is smaller than the one we're looking for,
         # we skip this row
         if row_date < start_date:
@@ -59,7 +58,6 @@ def get_same_or_newer(start_date, data):
         if row_date < min_date:
             min_date = row_date
             min_date_employees = []
-
         # If this date is the same as the current minimum,
         # we add the employee in this row to the list of
         # employees at the minimal date.
