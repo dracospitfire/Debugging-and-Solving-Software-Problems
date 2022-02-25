@@ -18,7 +18,7 @@ def get_start_date():
     day = int(input('Enter a value for the day: '))
     print()
 
-    return datetime.datetime(2019, 1, 1)
+    return datetime.datetime(year, month, day)
 
 
 def get_file_lines(url):
